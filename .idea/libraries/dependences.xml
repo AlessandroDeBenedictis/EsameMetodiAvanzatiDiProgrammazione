@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="dependences">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/mysql-connector-java-8.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GuiEsame/src/dependences/javafx.controls.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

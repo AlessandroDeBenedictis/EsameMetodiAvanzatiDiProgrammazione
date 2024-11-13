@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AvvioServerController">
+   <children>
+      <AnchorPane prefHeight="616.0" prefWidth="993.0" style="-fx-background-color: #2F2B43; -fx-background-radius: 15;">
+         <children>
+            <Pane layoutX="590.0" layoutY="-1.0" prefHeight="93.0" prefWidth="405.0" style="-fx-background-radius: 20 20 0 0;" styleClass="linear-grad">
+               <children>
+                  <Label layoutX="167.0" layoutY="21.0" text="MENU" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox prefHeight="544.0" prefWidth="74.0" style="-fx-background-color: #393351; -fx-background-radius: 15 0 0 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="79.0" prefWidth="74.0" style="-fx-background-radius: 15 0 15 15; -fx-background-color: #393351;" />
+                  <Button fx:id="docsButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#handledocs" prefHeight="66.0" prefWidth="74.0" styleClass="button3" text="Docs" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/cat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="serverButton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="66.0" prefWidth="74.0" styleClass="button3" text="Server" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/time.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="dataButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#handledata" prefHeight="66.0" prefWidth="74.0" styleClass="button3" text="Data" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/flag.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="log" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleLog" prefHeight="66.0" prefWidth="74.0" styleClass="button3" text="Log" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="exitButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleExit" prefHeight="66.0" prefWidth="74.0" styleClass="button3" text="Exit" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/group.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="91.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="134.0" layoutY="29.0" text="Esame di Metodi Avanzati di Programmazione" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="75.0" layoutY="55.0" prefHeight="559.0" prefWidth="917.0" style="-fx-background-color: #393351;">
+               <children>
+                  <ProgressBar layoutY="544.0" prefHeight="19.0" prefWidth="922.0" />
+                  <Label layoutX="37.0" layoutY="35.0" prefHeight="56.0" prefWidth="422.0" text="Scegli un opzione" textFill="WHITE">
+                     <font>
+                        <Font name="Calisto MT Bold Italic" size="39.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="79.0" fitWidth="81.0" layoutX="25.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/freccia.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="79.0" fitWidth="80.0" layoutX="25.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/spegnimento.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="165.0" layoutY="165.0" prefHeight="45.0" prefWidth="365.0" text="Avvia il server" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="165.0" layoutY="354.0" prefHeight="56.0" prefWidth="373.0" text="Spegni il server" textFill="WHITE">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="logTextArea" layoutX="1.0" layoutY="451.0" opacity="0.68" prefHeight="93.0" prefWidth="922.0" />
+                  <ImageView fitHeight="334.0" fitWidth="258.0" layoutX="628.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/serverfoto.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="7.0" layoutY="141.0" mnemonicParsing="false" onAction="#avvioserver" opacity="0.0" prefHeight="93.0" prefWidth="909.0" text="Avvio server" />
+                  <Button layoutX="4.0" layoutY="335.0" mnemonicParsing="false" onAction="#chiusuraserver" opacity="0.0" prefHeight="93.0" prefWidth="909.0" text="Chiusura Server" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
